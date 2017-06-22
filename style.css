@@ -1,9 +1,17 @@
+* {
+  font-family: serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  background-color: white;
-  margin: auto;
+  color: white;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: right;
 }
 
 h5 {
@@ -16,7 +24,16 @@ body {
   color: black;
 }
 
-ul {
+li {
   display: inline-block;
+  padding: 10px;
+  background-color: grey;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+}
 
+li:last-child {
+  background-color: orange;
 }
