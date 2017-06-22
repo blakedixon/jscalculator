@@ -1,9 +1,9 @@
-h5 {
-
-}
-
-.container {
+div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body {
+  background-color: blue;
 }
