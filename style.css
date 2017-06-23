@@ -24,16 +24,20 @@ body {
   color: black;
 }
 
-li {
-  display: inline-block;
+.button {
   padding: 10px;
   background-color: grey;
   width: 40px;
   height: 40px;
-  margin: 5px;
   text-align: center;
+  display: inline-block;
 }
 
-li:last-child {
+.button:hover {
+  transition: 0.5s;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+article:last-child {
   background-color: orange;
 }
