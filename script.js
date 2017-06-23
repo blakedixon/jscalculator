@@ -1,5 +1,3 @@
-
-
 var clickVal = "";
 var calculation = document.querySelector("h5");
 console.log(calculation);
@@ -24,20 +22,42 @@ const subtraction = document.querySelector(".subtraction");
 
 
 this.updateCalc = this.updateCalc.bind(this);
+this.addition = this.addition.bind(this);
 
 function updateCalc() {
-  calculation.textContent = clickVal;
+  console.log(clickVal);
+  if (calculation.textContent == "0")
+    calculation.textContent = clickVal;
+  else
+    calculation.textContent += clickVal;
 }
 
-zero.addEventListener('click', function () { clickVal = "0" })
+function addition() {
+  console.log("Addition Called");
+  add.style.backgroundColor = "black";
+  add.style.color = "orange";
+}
+
+zero.addEventListener('click', function () { clickVal = "0" });
 zero.addEventListener('click', this.updateCalc);
-one.addEventListener('click', function () { clickVal = "1" })
+one.addEventListener('click', function () { clickVal = "1" });
 one.addEventListener('click', this.updateCalc);
-second.addEventListener('click', function () { clickVal = "2" })
+second.addEventListener('click', function () { clickVal = "2" });
 second.addEventListener('click', this.updateCalc);
-three.addEventListener('click', function () { clickVal = "3" })
+three.addEventListener('click', function () { clickVal = "3" });
 three.addEventListener('click', this.updateCalc);
-four.addEventListener('click', function () { clickVal = "4" })
+four.addEventListener('click', function () { clickVal = "4" });
 four.addEventListener('click', this.updateCalc);
-five.addEventListener('click', function () { clickVal = "5" })
+five.addEventListener('click', function () { clickVal = "5" });
 five.addEventListener('click', this.updateCalc);
+six.addEventListener('click', function () { clickVal = "6" });
+six.addEventListener('click', this.updateCalc);
+seven.addEventListener('click', function () { clickVal = "7" });
+seven.addEventListener('click', this.updateCalc);
+eight.addEventListener('click', function () { clickVal = "8" });
+eight.addEventListener('click', this.updateCalc);
+nine.addEventListener('click', function () { clickVal = "9" });
+nine.addEventListener('click', this.updateCalc);
+
+clear.addEventListener('click', function () { calculation.textContent = "0" });
+add.addEventListener('click', this.addition);
